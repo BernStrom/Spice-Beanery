@@ -2,6 +2,8 @@ import { Component } from 'react';
 import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
+import sampleItems from '../sample-items';
+import Item from './Item';
 
 export default class App extends Component {
     state = {
@@ -18,6 +20,10 @@ export default class App extends Component {
         this.setState({ items });
     }
 
+    loadSampleItems = () => {
+        this.setState({ items: sampleItems });
+    }
+
     render() {
         return (
             <div className="spice-beanery">
@@ -25,7 +31,10 @@ export default class App extends Component {
                     <Header tagline="Coffee Roasters" />
                 </div>
                 <Order />
-                <Inventory addItem={this.addItem} />
+                <Inventory 
+                    addItem={this.addItem} 
+                    loadSampleItems={this.loadSampleItems} 
+                />
             </div>
         );
     }
