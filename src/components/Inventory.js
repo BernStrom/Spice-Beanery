@@ -12,7 +12,8 @@ export default class Inventory extends Component {
                         key={key} 
                         index={key} 
                         item={this.props.items[key]} 
-                        updateItem={this.props.updateItem} 
+                        updateItem={this.props.updateItem}
+                        deleteItem={this.props.deleteItem} 
                     />
                 ))}
                 <AddItemForm addItem={this.props.addItem} />
