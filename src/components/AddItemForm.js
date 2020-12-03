@@ -1,4 +1,5 @@
 import { Component, createRef } from 'react';
+import PropTypes from 'prop-types';
 
 export default class AddItemForm extends Component {
     nameRef = createRef();
@@ -6,6 +7,10 @@ export default class AddItemForm extends Component {
     statusRef = createRef();
     descRef = createRef();
     imageRef = createRef();
+
+    static propTypes = {
+        addFish: PropTypes.func
+    }
 
     createItem = e => {
         e.preventDefault(); // Stops the form from submitting

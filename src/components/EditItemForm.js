@@ -1,6 +1,19 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class EditItemForm extends Component {
+    static propTypes = {
+        fish: PropTypes.shape({
+            image: PropTypes.string,
+            name: PropTypes.string,
+            desc: PropTypes.string,
+            status: PropTypes.string,
+            price: PropTypes.number
+        }),
+        index: PropTypes.string,
+        updateFish: PropTypes.func
+    };
+
     handleChange = e => {
         console.log(e.currentTarget.value);
         // Takes a copy of the current item
