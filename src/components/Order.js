@@ -5,7 +5,9 @@ export default class Order extends Component {
     renderOrder = key => {
         const item = this.props.items[key];
         const itemCount = this.props.order[key];
-        const isAvailable = item.status === 'available';
+        const isAvailable = item && item.status === 'available';
+
+        if (!item) return null; // Makes sure the item is loaded before continuing 
 
         if (!isAvailable) {
             return (
