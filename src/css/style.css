@@ -626,7 +626,7 @@ input[type=submit] {
 button[disabled],
 input[type=submit][disabled] {
   color: #d12028;
-  background: #fff;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
   border-color: #d12028;
   -webkit-transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
           transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
