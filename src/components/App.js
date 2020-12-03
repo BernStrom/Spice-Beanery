@@ -28,7 +28,7 @@ export default class App extends Component {
         // 1. Take a copy of state
         const order = { ...this.state.order };
         // 2. Either add to order, or update the number in the order
-        order[key] += 1 || 1;
+        order[key] = order[key] + 1 || 1;
         // 3. Call setState to update our state object
         this.setState({ order });
     }
@@ -49,7 +49,7 @@ export default class App extends Component {
                         ))}
                     </ul>
                 </div>
-                <Order />
+                <Order items={this.state.items} order={this.state.order} />
                 <Inventory 
                     addItem={this.addItem} 
                     loadSampleItems={this.loadSampleItems} 
