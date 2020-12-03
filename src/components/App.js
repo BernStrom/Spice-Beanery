@@ -41,7 +41,7 @@ export default class App extends Component {
         const items = { ...this.state.items };
         // 2. Add our new item to that items variable
         items[`item ${Date.now()}`] = item;
-        //3. Set the new items object to state
+        //3. Set the new items object to the state
         this.setState({ items });
     }
 
@@ -50,6 +50,15 @@ export default class App extends Component {
         const items = { ...this.state.fishes };
         // 2. Update that state
         items[key] = updatedItem;
+        // 3. Set that to the state
+        this.setState({ items });
+    }
+
+    deleteItem = key => {
+        // 1. Take a copy of the existing state
+        const items = { ...this.state.items };
+        // 2. Update that state
+        items[key] = null;
         // 3. Set that to the state
         this.setState({ items });
     }
@@ -87,6 +96,7 @@ export default class App extends Component {
                 <Inventory 
                     addItem={this.addItem}
                     updateItem={this.updateItem}
+                    deleteItem={this.deleteItem}
                     loadSampleItems={this.loadSampleItems}
                     items={this.state.items} 
                 />
