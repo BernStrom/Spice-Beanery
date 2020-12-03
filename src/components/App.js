@@ -4,12 +4,37 @@ import Order from './Order';
 import Inventory from './Inventory';
 import sampleItems from '../sample-items';
 import Item from './Item';
+import base from '../base';
 
 export default class App extends Component {
     state = {
         items: {},
         order: {}
     };
+
+    componentDidMount() {
+        const { params } = this.props.match;
+
+        // Reinstate localStorage
+        const localStorageRef = localStorage.getItem(params.storeId);
+        if (localStorageRef) {
+            this.setState({ order: JSON.parse(localStorageRef) });
+        }
+
+        this.ref = base.syncState(`${params.storeId}/items`, {
+            context: this,
+            state: 'items'
+        });
+    }
+
+    componentDidUpdate() {
+        const { params } = this.props.match;
+        localStorage.setItem(params.storeId, JSON.stringify(this.state.order));
+    }
+
+    componentWillUnmount() {
+        base.removeBinding(this.ref);
+    }
 
     addItem = item => {
         // 1. Take a copy of the existing state
