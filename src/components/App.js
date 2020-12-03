@@ -116,7 +116,8 @@ export default class App extends Component {
                     updateItem={this.updateItem}
                     deleteItem={this.deleteItem}
                     loadSampleItems={this.loadSampleItems}
-                    items={this.state.items} 
+                    items={this.state.items}
+                    storeId={this.props.match.params.storeId} 
                 />
             </div>
         );
