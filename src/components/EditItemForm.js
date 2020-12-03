@@ -48,6 +48,9 @@ export default class EditItemForm extends Component {
                     onChange={this.handleChange} 
                     value={this.props.item.image} 
                 />
+                <button onClick={() => this.props.deleteItem(this.props.index)}>
+                    Remove Item
+                </button>
             </div>
         )
     }
