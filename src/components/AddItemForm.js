@@ -25,15 +25,15 @@ export default class AddItemForm extends Component {
     render() {
         return (
             <form className="item-edit" onSubmit={this.createItem}>
-                <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
-                <input name="price" ref={this.priceRef} type="text" placeholder="Price" />
+                <input name="name" ref={this.nameRef} type="text" placeholder="Item Name" />
+                <input name="price" ref={this.priceRef} type="text" placeholder="Item Price" />
                 <select name="status" ref={this.statusRef}>
                     <option value="available">In Season!</option>
                     <option value="unavailable">Sold Out!</option>
                 </select>
 
-                <textarea name="desc" ref={this.descRef} placeholder="Description"></textarea>
-                <input name="image" ref={this.imageRef} type="text" placeholder="Image" />
+                <textarea name="desc" ref={this.descRef} placeholder="Item Description"></textarea>
+                <input name="image" ref={this.imageRef} type="text" placeholder="Item Image" />
                 <button type="submit">+ Add Item</button>
             </form>
         );
