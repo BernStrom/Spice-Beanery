@@ -29,6 +29,9 @@ export default class App extends Component {
             <div className="spice-beanery">
                 <div className="menu">
                     <Header tagline="Coffee Roasters" />
+                    <ul className="items">
+                        {Object.keys(this.state.items).map(key => <Item key={key} details={this.state.items[key]} />)}
+                    </ul>
                 </div>
                 <Order />
                 <Inventory 
