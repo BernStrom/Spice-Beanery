@@ -4,7 +4,7 @@ const items = {
         name: "Nutmeg Cappucino",
         image: "/images/nutmeg-coffee.jpg",
         desc:
-            "Our best-selling espresso infused with Nutmeg spices imported from Morrocco. Perfect for any time of the day.",
+            "Our best-selling espresso infused with Nutmeg spices imported from Morrocco. Perfect for any time of the day. ☕",
         price: 535,
         status: "available"
     },
@@ -13,7 +13,7 @@ const items = {
         name: "Pumpkin Spice Latte",
         image: "/images/pumpkin-spice-coffee.jpg",
         desc:
-            "Espresso and steamed milk, combined with a blend of pumpkin and traditional fall spice flavors. Enjoy this seasonal special finished with whipped cream.",
+            "Enjoy this seasonal special of pumpkin blend with traditional fall spice flavors.",
         price: 429,
         status: "available"
     },
@@ -31,7 +31,7 @@ const items = {
         name: "Butterscotch Latte",
         image: "/images/butterscotch-coffee.jpg",
         desc:
-            "Notes of smoked butterscotch intermingle with our signature espresso, giving your latte a sophisticated new twist.",
+            "Notes of smoked butterscotch intermingle with our signature espresso for  sophistication feels.",
         price: 376,
         status: "available"
     },
@@ -49,7 +49,7 @@ const items = {
         name: "Mocha Cupcake",
         image: "/images/mocha-espresso-cupcakes.jpg",
         desc:
-            "These cupcakes are coffee-infused with a subtle chocolate flavor, and topped with an espresso-spiked buttercream frosting.",
+            "These cupcakes are coffee-infused with a subtle chocolate flavor, and topped with an espresso-spiked buttercream frosting. 🧁",
         price: 315,
         status: "unavailable"
     },
@@ -58,7 +58,7 @@ const items = {
         name: "Brownie",
         image: "/images/brownie.jpg",
         desc: 
-            "Our fudgy brownies with nuts (or nut-free) and choco chips. Comes with a free icing of your choice 😋 ",
+            "Our fudgy brownies with nuts (or nut-free) and choco chips. Comes with a free icing of your choice.",
         price: 246,
         status: "available"
     },
@@ -67,7 +67,7 @@ const items = {
         name: "Kanelbolle",
         image: "/images/cinnamon-roll.jpg",
         desc: 
-            "A sweet roll from our lovely Scandinavian bakers. Perfect for those 'hygge' and 'fika' moments! 😌 ",
+            "Sweet rolls with a blend of cinnamon from our lovely Scandinavian artisinal bakers. Perfect for those 'hygge' and 'fika' moments! 🥰",
         price: 260,
         status: "available"
     },
