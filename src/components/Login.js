@@ -11,6 +11,12 @@ const Login = ({authenticate}) => (
             Log In With GitHub
         </button>
         <button 
+            className="google" 
+            onClick={()=> authenticate('Google')}
+        >
+            Log In With Google
+        </button>
+        <button 
             className="facebook" 
             onClick={()=> authenticate('Facebook')}
         >
