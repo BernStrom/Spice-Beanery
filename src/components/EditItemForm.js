@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class EditItemForm extends Component {
     static propTypes = {
-        fish: PropTypes.shape({
+        item: PropTypes.shape({
             image: PropTypes.string,
             name: PropTypes.string,
             desc: PropTypes.string,
@@ -11,7 +11,7 @@ export default class EditItemForm extends Component {
             price: PropTypes.number
         }),
         index: PropTypes.string,
-        updateFish: PropTypes.func
+        updateItem: PropTypes.func
     };
 
     handleChange = e => {
