@@ -42,9 +42,9 @@ export default class Order extends Component {
                             </CSSTransition>
                         </TransitionGroup>
                         x {item.name} 
-                        {formatPrice(itemCount * item.price)}
                         <button onClick={() => this.props.removeFromOrder(key)}>&times;</button>
                     </span>
+                    <span className="price">{formatPrice(itemCount * item.price)}</span>
                 </li>
             </CSSTransition>
         );
