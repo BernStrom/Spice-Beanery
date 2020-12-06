@@ -8,7 +8,7 @@
   <a href="#memo-disclaimer">Disclaimer</a>
 </p>
 
-# Spice Beanery [![Netlify Status](https://api.netlify.com/api/v1/badges/4f063ef1-21a4-4717-a7ae-643a5687f6e9/deploy-status)](https://app.netlify.com/sites/spice-beanery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f063ef1-21a4-4717-a7ae-643a5687f6e9/deploy-status)](https://app.netlify.com/sites/spicebeanery/deploys)
 
 <p align="center">
     <img width="100%" src="public/screenshots/spice-beanery-app-demo.gif" alt="Spice Beanery Demo"> 
@@ -22,7 +22,7 @@ The building blocks of this app that influences its main features are React.js, 
 
 Get into your "hygge"/ "fika" cafe moments with the indulgence of your choice, and leave some nice little feedbacks if you think your time and experience on the app was great! Just don't forget to keep yourself extra comfortable with some of those fluffy cardigans and throws ❄️ ☕ :D
 
-You can check out the deployed app right **_[here](https://spice-beanery.netlify.app/ "Spice Beanery")_**.
+You can check out the deployed app right **_[here](https://spicebeanery.netlify.app/ "Spice Beanery")_**.
   
 ## :pushpin: Project Objectives
 
