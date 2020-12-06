@@ -8,7 +8,7 @@
   <a href="#memo-disclaimer">Disclaimer</a>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f063ef1-21a4-4717-a7ae-643a5687f6e9/deploy-status)](https://app.netlify.com/sites/spicebeanery/deploys)
+# Spice Beanery [![Netlify Status](https://api.netlify.com/api/v1/badges/4f063ef1-21a4-4717-a7ae-643a5687f6e9/deploy-status)](https://app.netlify.com/sites/spicebeanery/deploys)
 
 <p align="center">
     <img width="100%" src="public/screenshots/spice-beanery-app-demo.gif" alt="Spice Beanery Demo"> 
