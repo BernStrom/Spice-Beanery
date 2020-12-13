@@ -30,15 +30,15 @@ You can check out the deployed app right **_[here](https://spicebeanery.netlify.
 
 * Create an app with a tech stack of my choice.
 
-_**(I chose to build a cafe React app with Firebase Auth and Database)**_
+_**(I chose to build a cafe React app with Firebase Auth and Database.)**_
 
 * Write well-formatted, named and commented code.
 
-* A documentation introducng and describing the application in detail.
+* A documentation introducing and describing the application in detail.
 
 * Deploy the application online through a hosting platform to make it publically accessible. 🚀
 
-_**(My top 3 options for this were Vercel, Netlify or Heroku)**_
+_**(My top 3 options for this were Vercel, Netlify or Heroku. I chose Netlify.)**_
 
 ## :gear: Technical Components
 
